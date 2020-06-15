@@ -74,11 +74,11 @@ function load() {
           const forecastDay = forecastDate.getDate();
           const forecastMonth = forecastDate.getMonth() + 1;
           const forecastYear = forecastDate.getFullYear();
-          const forecastDate = document.createElement("p");
-          forecastDate.setAttribute("class", "mt-3 mb-0 forecast-date");
-          forecastDate.innerHTML =
+          const currForecastDate = document.createElement("p");
+          currForecastDate.setAttribute("class", "mt-3 mb-0 forecast-date");
+          currForecastDate.innerHTML =
             forecastMonth + "/" + forecastDay + "/" + forecastYear;
-          forecast[i].append(forecastDate);
+          forecast[i].append(currForecastDate);
           const forecastWeather = document.createElement("img");
           forecastWeather.setAttribute(
             "src",
